@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future is Specified: AI & Spec-Driven Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="doodles"></div>
+    <button id="fullscreen-btn">⛶ Fullscreen</button>
+    <button id="nav-toggle-btn">👁️ Hide Nav</button>
+
+    <div id="presentation-container">
+
+        <section class="slide active" id="slide1">
+            <div class="title-container">
+                <div class="main-title-box">
+                    <h1>Spec Driven Development</h1>
+                    <div class="subtitle-box">
+                        <h2>How AI Agents are Revolutionizing Software Development</h2>
+                    </div>
+                </div>
+                
+                <div class="concept-boxes">
+                    <div class="concept-box">
+                        <span class="concept-icon">📝</span>
+                        <span class="concept-text">Specify</span>
+                    </div>
+                    <div class="arrow-connector">→</div>
+                    <div class="concept-box">
+                        <span class="concept-icon">🤖</span>
+                        <span class="concept-text">AI Agent</span>
+                    </div>
+                    <div class="arrow-connector">→</div>
+                    <div class="concept-box">
+                        <span class="concept-icon">⚡</span>
+                        <span class="concept-text">Execute</span>
+                    </div>
+                </div>
+                
+                <div class="event-info-box">
+                    <p>Cédric Derue &nbsp; • &nbsp; VS Code Dev Days &nbsp; • &nbsp; October 16, 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide2">
+            <div class="bio-container">
+                <h3>About Me</h3>
+                
+                <div class="bio-content">
+                    <div class="bio-card">
+                        <div class="bio-avatar">
+                            <img src="photo.png" alt="Cédric Derue" class="avatar-photo">
+                        </div>
+                        
+                        <div class="bio-info">
+                            <h4>Cédric Derue</h4>
+                            <div class="bio-details">
+                                <div class="bio-item">
+                                    <span class="bio-icon">🏢</span>
+                                    <span>Cloud and DevOps Architect</span>
+                                </div>
+                                <div class="bio-item">
+                                    <span class="bio-icon">💡</span>
+                                    <span>AI & Developer Tools Enthusiast</span>
+                                </div>
+                                <div class="bio-item">
+                                    <span class="bio-icon">🚀</span>
+                                    <span>Spec-Driven Development Advocate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bio-highlights">
+                        <div class="highlight-box">
+                            <span class="highlight-number">20+</span>
+                            <span class="highlight-text">Years in Software Development</span>
+                        </div>
+                        <div class="highlight-box">
+                            <span class="highlight-number">∞</span>
+                            <span class="highlight-text">Lines of Code</span>
+                        </div>
+                        <div class="highlight-box">
+                            <span class="highlight-number">🎯</span>
+                            <span class="highlight-text">Believer in AI-Human Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide3">
+            <div class="slide-content-with-margin">
+                <h3>The Rise and Fall of "Vibe Coding"</h3>
+                <p>Since early 2025, <strong>"vibe coding"</strong> emerged as developers began creating full applications through AI chat prompts.</p>
+                
+                <div class="vibe-stats">
+                    <div class="stat-highlight">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-text">AI-generated codebases in 25% of Y Combinator's Winter 2025 cohort</span>
+                    </div>
+                </div>
+
+                <div class="problems-grid">
+                    <div class="problem-category">
+                        <h4>The Promise</h4>
+                        <ul class="promise-list">
+                            <li>✨ Code from simple prompts</li>
+                            <li>🚀 Rapid prototyping</li>
+                            <li>🎯 "Just describe what you want"</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="problem-category">
+                        <h4>The Reality</h4>
+                        <ul class="reality-list">
+                            <li>💔 Poor code quality and architecture</li>
+                            <li>🐛 Security vulnerabilities</li>
+                            <li>🎭 Great for prototypes, fails at production</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="slide hidden" id="slide4">
+            <div class="slide-content-with-margin">
+                <h3>The Evolution: Traditional → Prompt-Driven Development</h3>
+                
+                <p>Understanding the shift from traditional software development to structured AI collaboration.</p>
+                
+                <div class="evolution-comparison side-by-side">
+                    <div class="evolution-section traditional-section">
+                        <h4>🔄 Traditional Approach</h4>
+                        <div class="traditional-diagram vertical">
+                            <div class="traditional-step step-receive-req">
+                                <span class="step-number">1</span>
+                                <span class="step-text">Receive Requirements</span>
+                            </div>
+                            <div class="traditional-arrow vertical">↓</div>
+                            <div class="traditional-step step-iterate-code">
+                                <span class="step-number">2</span>
+                                <span class="step-text">Iterate on Code</span>
+                            </div>
+                            <div class="traditional-arrow vertical">↓</div>
+                            <div class="traditional-step step-submit-review">
+                                <span class="step-number">3</span>
+                                <span class="step-text">Submit for Review</span>
+                            </div>
+                            <div class="traditional-arrow vertical">↓</div>
+                            <div class="traditional-step step-review-merge">
+                                <span class="step-number">4</span>
+                                <span class="step-text">Review & Merge</span>
+                            </div>
+                        </div>
+                        <p class="approach-description">Developer works in isolation, iterating locally</p>
+                    </div>
+                    
+                    <div class="evolution-arrow horizontal">
+                        <div class="big-arrow">→</div>
+                        <span class="evolution-text">EVOLVED TO</span>
+                    </div>
+                    
+                    <div class="evolution-section prompt-section">
+                        <h4>🤖 Prompt-Driven Approach</h4>
+                        <div class="prompt-diagram vertical">
+                            <div class="prompt-step step-receive-req">
+                                <span class="step-number">1</span>
+                                <span class="step-text">Receives requirements</span>
+                            </div>
+                            <div class="prompt-arrow vertical">↓</div>
+                            <div class="prompt-step step-break-prompts">
+                                <span class="step-number">2</span>
+                                <span class="step-text">Breaks into prompts</span>
+                            </div>
+                            <div class="prompt-arrow vertical">↓</div>
+                            <div class="llm-iteration-circle compact">
+                                <div class="iteration-label">Iterates with LLM</div>
+                                <div class="llm-cycle">
+                                    <div class="llm-step llm-prompt">
+                                        <span class="llm-text">Prompt</span>
+                                    </div>
+                                    <div class="llm-step llm-writes">
+                                        <span class="llm-text">Code</span>
+                                    </div>
+                                    <div class="llm-step llm-review">
+                                        <span class="llm-text">Review</span>
+                                    </div>
+                                </div>
+                                <div class="circular-arrow compact">
+                                    <svg width="80" height="80" viewBox="0 0 80 80">
+                                        <circle cx="40" cy="40" r="25" fill="none" stroke="#ff6b35" stroke-width="3" 
+                                                stroke-dasharray="8 3" opacity="0.8">
+                                            <animateTransform attributeName="transform" type="rotate" 
+                                                            values="0 40 40;360 40 40" dur="4s" repeatCount="indefinite"/>
+                                        </circle>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="prompt-arrow vertical">↓</div>
+                            <div class="prompt-step step-submit-review">
+                                <span class="step-number">3</span>
+                                <span class="step-text">Submit for review</span>
+                            </div>
+                            <div class="prompt-arrow vertical">↓</div>
+                            <div class="prompt-step step-merge-final">
+                                <span class="step-number">4</span>
+                                <span class="step-text">Merge</span>
+                            </div>
+                        </div>
+                        <p class="approach-description">Structured AI collaboration with iterative refinement</p>
+                    </div>
+                </div>
+                
+                <div class="evolution-insights">
+                    <div class="insight-highlight">
+                        <span class="insight-icon">💡</span>
+                        <span class="insight-text">The key evolution: from isolated coding to structured AI partnership</span>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="slide" id="slide5">
+            <div class="slide-content-with-margin">
+                <h3>The Spec-Driven Development Shift</h3>
+                
+                <div class="spec-driven-intro">
+                    <h4>The Paradigm Shift</h4>
+                    <p>Agree on a <strong>contract</strong> before writing code.</p>
+                    <div class="spec-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📋</span>
+                            <span>Single source of truth</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⚡</span>
+                            <span>Parallel development</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🔄</span>
+                            <span>Auto-generated docs & code</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎯</span>
+                            <span>Clear expectations alignment</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 30px; font-style: italic; font-size: 1.1rem;">But specs were still primarily for humans to read... until now.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="slide" id="slide6">
+            <div class="slide-content-with-margin">
+                <h3>Levels of "Spec-Driven" Development</h3>
+                
+                <div class="spec-levels-container">
+                    <img src="sdd-levels.png" alt="Levels of spec-driven development showing spec-first, spec-anchored, and spec-as-source approaches" class="spec-levels-image">
+                    
+                    <div class="spec-levels-explanation">
+                        <div class="spec-level-item">
+                            <h4>🥉 Spec-First</h4>
+                            <p>Create specifications before writing code for new features</p>
+                        </div>
+                        <div class="spec-level-item">
+                            <h4>🥈 Spec-Anchored</h4>
+                            <p>Specifications guide both creation and evolution of features</p>
+                        </div>
+                        <div class="spec-level-item">
+                            <h4>🥇 Spec-as-Source</h4>
+                            <p>Specifications become the single source of truth for the entire system</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="image-attribution">Source: martinfowler.com/articles/exploring-gen-ai.html</p>
+            </div>
+        </section>
+
+        <section class="slide" id="slide7">
+            <h3>The Game Changer: The AI Agent</h3>
+            <p>Today, the spec is no longer just a document. It's the primary <strong>input for an AI coding agent.</strong></p>
+            <div class="big-statement">Spec + AI Agent = Executable Intent</div>
+            <p>We're moving from using AI as a simple autocomplete to a system where we give an autonomous agent a goal, and it executes.</p>
+        </section>
+        
+        <section class="slide" id="slide8">
+            <div class="slide-content-with-margin">
+                <h3>The New AI-Powered Workflow</h3>
+                
+                <p>The 5-step spec-driven development process that transforms how we build software.</p>
+                
+                <div class="workflow-cards">
+                    <div class="workflow-card card-constitution">
+                        <div class="card-header">
+                            <span class="card-number">1</span>
+                            <span class="card-icon">📜</span>
+                        </div>
+                        <h4>Constitution</h4>
+                        <p>Establish the foundational principles, constraints, and architectural guidelines that will govern the entire project. This sets the non-negotiable boundaries.</p>
+                    </div>
+                    
+                    <div class="workflow-card card-specify">
+                        <div class="card-header">
+                            <span class="card-number">2</span>
+                            <span class="card-icon">📝</span>
+                        </div>
+                        <h4>Specify</h4>
+                        <p>The human developer defines the "what" and "why" in a high-level, structured specification. The AI helps flesh this out into a detailed, machine-readable plan.</p>
+                    </div>
+                    
+                    <div class="workflow-card card-plan">
+                        <div class="card-header">
+                            <span class="card-number">3</span>
+                            <span class="card-icon">🗺️</span>
+                        </div>
+                        <h4>Plan</h4>
+                        <p>The AI agent takes the spec and creates a comprehensive strategic plan, identifying dependencies, risks, and resource requirements for the entire project.</p>
+                    </div>
+                    
+                    <div class="workflow-card card-tasks">
+                        <div class="card-header">
+                            <span class="card-number">4</span>
+                            <span class="card-icon">📋</span>
+                        </div>
+                        <h4>Tasks</h4>
+                        <p>Break down the plan into specific, actionable tasks with clear deliverables, priorities, and acceptance criteria that can be executed independently.</p>
+                    </div>
+                    
+                    <div class="workflow-card card-implement">
+                        <div class="card-header">
+                            <span class="card-number">5</span>
+                            <span class="card-icon">⚡</span>
+                        </div>
+                        <h4>Implement</h4>
+                        <p>The agent executes the tasks, writing, refactoring, and structuring the code to perfectly match the specification within the constitutional framework.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide" id="slide9">
+            <h3>The Developer's New Role: The Architect</h3>
+            <p>Our job isn't disappearing; it's evolving. We are moving from bricklayers to architects.</p>
+            <h2>Your value is in your ability to <strong>think, plan, and specify</strong>.</h2>
+            <p>The most effective engineers of tomorrow will be those who can clearly articulate complex requirements and guide AI agents to build robust, scalable systems.</p>
+        </section>
+
+        <section class="slide" id="slide10">
+            <h1>The Future is Specified.</h1>
+            <p style="font-size: 1.8rem; max-width: 900px; margin-top: 40px;">By combining the structured clarity of Spec-Driven Development with the executional power of AI agents, we are unlocking a new era of software creation—one that is faster, more reliable, and more aligned with human intent than ever before.</p>
+            <h2 style="margin-top: 60px;">Questions?</h2>
+        </section>
+
+    </div>
+
+    <div id="nav-controls">
+        <button id="prev-btn" title="Previous Slide (Left Arrow or Swipe Right)">←</button>
+        <span id="slide-counter">1 / 10</span>
+        <button id="next-btn" title="Next Slide (Right Arrow or Swipe Left)">→</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
