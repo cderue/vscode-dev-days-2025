@@ -86,7 +86,7 @@ body {
 .slide {
     width: 100vw;
     height: 100vh;
-    padding: clamp(1rem, 5vw, 4rem);
+    padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 4vw, 4rem);
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -437,11 +437,11 @@ code {
 /* Workflow Cards Layout */
 .workflow-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(220px, 85vw), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 90vw), 1fr));
     gap: clamp(0.5rem, 2vw, 1rem);
     margin-top: clamp(1rem, 2vh, 1.5rem);
     width: 100%;
-    max-width: min(1200px, 95vw);
+    max-width: min(1400px, 98vw);
     box-sizing: border-box;
 }
 
@@ -681,7 +681,10 @@ code {
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: min(1000px, 90vw);
+    max-width: min(1200px, 92vw);
+    padding: clamp(0.5rem, 2vh, 1.5rem);
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .main-title-box {
@@ -906,7 +909,10 @@ code {
     align-items: center;
     gap: 40px;
     width: 100%;
-    max-width: 900px;
+    max-width: min(1000px, 90vw);
+    padding: clamp(0.5rem, 2vh, 1.5rem);
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .bio-content {
@@ -1118,11 +1124,11 @@ code {
 /* Vibe Coding Slide Styles */
 .slide-content-with-margin {
     width: 100%;
-    max-width: min(1200px, 95vw);
+    max-width: min(1400px, 95vw);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: clamp(60px, 8vh, 100px); /* Responsive bottom margin for navigation */
+    padding: clamp(0.5rem, 2vh, 1.5rem) clamp(0.5rem, 2vw, 1.5rem) clamp(60px, 8vh, 100px);
     box-sizing: border-box;
     flex: 1;
     justify-content: center;
@@ -1172,7 +1178,7 @@ code {
     gap: 25px;
     margin-top: 25px;
     width: 100%;
-    max-width: min(1000px, 90vw);
+    max-width: min(1200px, 95vw);
 }
 
 .problem-category {
@@ -1310,7 +1316,9 @@ code {
 /* Mobile responsiveness for vibe coding slide */
 @media (max-width: 768px) {
     .slide-content-with-margin {
-        padding-bottom: 100px; /* Extra bottom margin on mobile */
+        padding: clamp(0.5rem, 2vh, 1rem) clamp(0.5rem, 2vw, 1rem) clamp(80px, 12vh, 120px);
+        width: 100%;
+        max-width: 98vw;
     }
     
     .problems-grid {
@@ -2463,7 +2471,7 @@ code {
     gap: clamp(15px, 2vh, 30px);
     margin-top: clamp(10px, 2vh, 20px);
     width: 100%;
-    max-width: min(1200px, 90vw);
+    max-width: min(1400px, 96vw);
     flex: 1;
     justify-content: center;
     min-height: 0;
@@ -2583,7 +2591,7 @@ code {
 /* Comprehensive Mobile Adaptation for All Slides */
 @media (max-width: 768px) {
     .slide {
-        padding: 3vw 4vw;
+        padding: clamp(1rem, 4vw, 2rem) clamp(1rem, 5vw, 1.5rem);
         height: 100vh;
         overflow-y: auto;
         justify-content: flex-start;
@@ -2592,8 +2600,10 @@ code {
     
     /* Title slide mobile adaptation */
     .title-container {
-        padding: 20px 0;
+        padding: clamp(0.5rem, 3vh, 1.5rem) clamp(0.5rem, 2vw, 1rem);
         gap: 20px;
+        width: 100%;
+        max-width: 98vw;
     }
     
     .main-title-box h1 {
@@ -2636,8 +2646,10 @@ code {
     
     /* Bio slide mobile adaptation */
     .bio-container {
-        padding: 10px;
+        padding: clamp(0.5rem, 2vh, 1rem) clamp(0.5rem, 2vw, 1rem);
         gap: 20px;
+        width: 100%;
+        max-width: 96vw;
     }
     
     .bio-grid {
@@ -2901,9 +2913,10 @@ code {
     .title-container,
     .bio-container,
     .slide-content-with-margin {
-        max-width: min(1200px, 90vw);
+        max-width: min(1400px, 92vw);
         width: 100%;
         margin: 0 auto;
+        padding: clamp(0.5rem, 2vh, 2rem) clamp(0.5rem, 2vw, 1.5rem);
     }
     
     /* Fix any content that might overflow */
@@ -2918,8 +2931,8 @@ code {
     
     /* Desktop-specific workflow cards optimization */
     .workflow-cards {
-        grid-template-columns: repeat(auto-fit, minmax(min(200px, 28vw), 1fr));
-        max-width: min(1200px, 95vw);
+        grid-template-columns: repeat(auto-fit, minmax(min(200px, 30vw), 1fr));
+        max-width: min(1500px, 98vw);
         margin: 0 auto;
         margin-top: clamp(1rem, 2vh, 2rem);
         gap: clamp(0.75rem, 1.5vw, 1.25rem);
@@ -3191,6 +3204,20 @@ code {
     .concept-boxes {
         margin: 3rem 0;
     }
+}
+
+/* Ensure all slide elements have safe margins from viewport edges */
+.slide > * {
+    margin-left: clamp(0.25rem, 1vw, 1rem);
+    margin-right: clamp(0.25rem, 1vw, 1rem);
+    box-sizing: border-box;
+}
+
+.slide > .title-container,
+.slide > .bio-container,
+.slide > .slide-content-with-margin {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /* Accessibility: Reduced Motion */
